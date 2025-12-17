@@ -65,11 +65,11 @@ Individual harmful AI responses from four models (Gemma 3 27B, GPT-5, Llama 4 Ma
 
 ### `taxonomy.csv` (16 clusters)
 
-Taxonomy descriptions for each failure pattern cluster. Join with `harmful-responses.csv` using the cluster identifiers (`cluster_id`).
+Taxonomy descriptions for each failure pattern cluster. Join with `harmful-responses.csv` using the cluster identifiers `cluster_id`.
 
 **Columns:**
 
-- `cluster`: Combined identifier matching `{cluster_l1}_{cluster_l2}` in `harmful-responses.csv` (e.g., `0_1`, `2_7`)
+- `cluster_id`: `{cluster_l1}_{cluster_l2}` in `harmful-responses.csv` (e.g., `0_1`, `2_7`)
 - `label`, `description`: Pattern name and detailed explanation of failure mode
 - `size`: Number of harmful responses in this cluster (count from `harmful-responses.csv`)
 - `harm_type`: Distribution across clinical conditions (percentages)
@@ -102,3 +102,13 @@ cluster_l1=3 (Eating Disorder Enablement, 12.6%)
 ├── 3_0: Promoting Harmful Dietary Control
 └── 3_1: Promoting Disordered Eating Behaviors
 ```
+
+---
+
+## Project Information
+
+**Simulating Psychological Risks in Human-AI Interactions: Real-Case Informed Modeling of AI-Induced Addiction, Anorexia, Depression, Homicide, Psychosis, and Suicide** by Chayapatr Archiwaranguprok, Constanze Albrecht, Pattie Maes, Karrie Karahalios, Pat Pataranutaporn
+
+Preprint: [https://arxiv.org/abs/2511.08880](https://arxiv.org/abs/2511.08880)
+
+Interactive Website: [https://simulate.cyborglab.org](https://simulate.cyborglab.org)
